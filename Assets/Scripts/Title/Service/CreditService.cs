@@ -12,8 +12,6 @@ public class CreditService
     public string GetCreditText()
     {
         var textData = _textAsset.text;
-        textData = "\n\n\n\n" + textData;
-        
         return ConvertUrlsToLinks(textData);
     }
 
