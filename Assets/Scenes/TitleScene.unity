@@ -1020,6 +1020,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2142614436768334520, guid: a2b7f06e1fd9645d2a92b2afeb546465, type: 3}
   m_PrefabInstance: {fileID: 4887583423502356804}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &526760281 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5083880100396633531, guid: a2b7f06e1fd9645d2a92b2afeb546465, type: 3}
+  m_PrefabInstance: {fileID: 4887583423502356804}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1705,6 +1716,7 @@ MonoBehaviour:
   mainCreditData: {fileID: 11400000, guid: 9e163d8ca320c43fdb2f5ad8f6ccb535, type: 2}
   creditText: {fileID: 4370942445247144665}
   licenseText: {fileID: 1528166975}
+  startButton: {fileID: 526760281}
   creditButton: {fileID: 138562895}
   licenseButton: {fileID: 1572473981}
   closeCreditButton: {fileID: 960064151}

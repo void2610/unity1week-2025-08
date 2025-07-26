@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using VContainer;
 
 public class TitlePresenter : MonoBehaviour
@@ -9,6 +10,7 @@ public class TitlePresenter : MonoBehaviour
     [SerializeField] private MainCreditData mainCreditData;
     [SerializeField] private TextMeshProUGUI creditText;
     [SerializeField] private TextMeshProUGUI licenseText;
+    [SerializeField] private Button startButton;
     [SerializeField] private Button creditButton;
     [SerializeField] private Button licenseButton;
     [SerializeField] private Button closeCreditButton;
@@ -27,7 +29,7 @@ public class TitlePresenter : MonoBehaviour
         _licenseService = licenseService;
     }
     
-    public void ToggleCanvasGroup(string canvasGroupName, bool isActive)
+    private void ToggleCanvasGroup(string canvasGroupName, bool isActive)
     {
         var canvasGroup = _canvasGroups.Find(cg => cg.name == canvasGroupName);
         if (!canvasGroup) return;
@@ -35,6 +37,11 @@ public class TitlePresenter : MonoBehaviour
         canvasGroup.alpha = isActive ? 1f : 0f;
         canvasGroup.interactable = isActive;
         canvasGroup.blocksRaycasts = isActive;
+    }
+    
+    private void StartGame()
+    {
+        SceneManager.LoadScene("MainScene");
     }
     
     private void UpdateContentSize(TextMeshProUGUI text)
@@ -52,6 +59,7 @@ public class TitlePresenter : MonoBehaviour
         
         _canvasGroups = new List<CanvasGroup>(FindObjectsByType<CanvasGroup>(FindObjectsSortMode.None));
         
+        startButton.onClick.AddListener(StartGame);
         creditButton.onClick.AddListener(() => ToggleCanvasGroup("Credit", true));
         licenseButton.onClick.AddListener(() => ToggleCanvasGroup("License", true));
         closeCreditButton.onClick.AddListener(() => ToggleCanvasGroup("Credit", false));
