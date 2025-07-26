@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 499ba51b3ba134d2e9c0bdfa95f05e16, type: 3}
+  m_Name: MainCreditData
+  m_EditorClassIdentifier: 
+  credits:
+  - name: polaritia
+    role: "\u30A2\u30FC\u30C8"
+    icon: {fileID: -2278566297644842510, guid: cb385ab0f5e18418f96ab24e537169cf, type: 3}
+    link: https://x.com/6_pId_9
+  - name: void2610
+    role: "\u30A8\u30F3\u30B8\u30CB\u30A2"
+    icon: {fileID: -2278566297644842510, guid: cb385ab0f5e18418f96ab24e537169cf, type: 3}
+    link: https://x.com/void2610
+  - name: "\u306A\u3050\u3082\u308A\u305A"
+    role: "\u30B5\u30A6\u30F3\u30C9"
+    icon: {fileID: -2278566297644842510, guid: cb385ab0f5e18418f96ab24e537169cf, type: 3}
+    link: https://x.com/nagumorizu
